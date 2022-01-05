@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.list-container {
+		@apply flex flex-col sm:flex-row justify-evenly;
+	}
+
+	.list {
+		@apply m-0.625 /* list-outside list-disc */ p-1 border-2  max-w-prose min-w-[25ch] rounded-xl  /* transition-all hover:marker:ease-in-out hover:marker:duration-700 marker:ease-in-out marker:duration-500 marker:text-red-500 marker:text-2 hover:marker:text-indigo-500 */;
+	}
+
+	.list-marker {
+		@apply transition-all hover:ease-in-out hover:duration-700 ease-in-out duration-500 rounded-full w-3 mr-1;
+	}
+	.list-marker-fe {
+		@apply hover:fill-orange-400 fill-emerald-700 bg-blue-200;
+	}
+
+	.list-marker-be {
+		@apply hover:fill-yellow-400 fill-emerald-700 bg-blue-200;
+	}
+
+	.list-item {
+		@apply m-1 mx-2 flex flex-col;
+	}
+
+	.list-name {
+		@apply decoration-2 underline-offset-2 decoration-accent-tinted;
+	}
+
+	.list-info {
+	}
+
+	.list-image {
+		@apply max-w-[25%] object-contain  min-w-[5rem] hover:scale-125 hover:transition duration-500 ease-in-out my-1 mr-1;
+	}
+}

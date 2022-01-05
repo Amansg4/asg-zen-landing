@@ -1,0 +1,25 @@
+@tailwind base;
+@layer base {
+}
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.book-detail-container {
+		@apply bg-gradient-to-tr from-indigo-300 to-green-300 border-indigo-800 border-2 m-2 rounded-2xl text-center  w-1/2;
+	}
+	.book-detail-title {
+		@apply text-red-700;
+	}
+	.book-detail-author {
+		@apply text-blue-600;
+	}
+
+	.book-detail-id {
+		@apply text-green-600;
+	}
+
+	.book-form-container {
+		@apply flex flex-col bg-gradient-to-t from-indigo-300 border-indigo-400 border-2 rounded-3xl;
+	}
+}

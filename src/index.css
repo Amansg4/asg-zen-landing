@@ -1,0 +1,148 @@
+/* Imported Fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Aclonica&family=Acme&family=Antonio:wght@200;500&family=Bellefair&family=Chakra+Petch:ital,wght@0,300;0,500;1,300;1,500&family=Cinzel:wght@400;600&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Domine:wght@400;700&family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=IM+Fell+English+SC&family=Julius+Sans+One&family=Kanit:ital,wght@0,200;0,300;0,500;1,200&family=Lora:ital,wght@0,400;1,500&family=Maven+Pro&family=Merriweather:ital,wght@0,300;0,700;1,300;1,700&family=Monda&family=Montserrat+Alternates:ital,wght@0,300;0,500;1,300;1,500&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&family=Nanum+Myeongjo:wght@400;800&family=Noto+Sans:ital@0;1&family=Noto+Serif&family=Orbitron:wght@400;700&family=Philosopher:ital,wght@0,400;0,700;1,400&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400&family=Quicksand:wght@400;600&family=Roboto+Condensed:ital,wght@0,300;0,400;1,300;1,400&family=Roboto+Slab:wght@200;300;400;500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300&family=Six+Caps&family=Spartan:wght@300;400;600&family=Spectral+SC:ital,wght@0,300;0,600;1,200&family=Spectral:ital,wght@0,300;0,400;0,600;1,300&family=Syncopate:wght@400;700&display=swap");
+
+/* //Imported Component Styles */
+
+@tailwind base;
+
+@layer base {
+	/* Basic Styling */
+
+	/* Right placement or under root? */
+	*,
+	*::before,
+	*::after {
+		@apply box-border;
+	}
+
+	/* Color Palette Do I use root or some other general location? *, html, body??? */
+
+	:root {
+		/* Color Palletes */
+
+		/* DEFAULT THEME -------------------- */
+
+		--color-base: #;
+		--color-base-tinted: theme("colors.emerald.500");
+		--color-base-toned: #;
+		--color-base-shaded: #;
+		--color-compliment: #;
+		--color-compliment-tinted: #;
+		--color-compliment-toned: #;
+		--color-compliment-shaded: #;
+		--color-accent: #;
+		--color-accent-tinted: #;
+		--color-accent-toned: #;
+		--color-accent-shaded: #;
+		--color-muted: #;
+		--color-muted-tinted: #;
+		--color-muted-toned: #;
+		--color-muted-shaded: #;
+
+		/* Font Colors */
+
+		--text-base: #;
+		--text-compliment: #;
+		--text-accent: #;
+		--text-muted: #;
+
+		/* --border-size:
+--border-radius: */
+	}
+
+	/* ALTERNATE THEMES -------------------- */
+
+	/* GRAND EXAMPLE OF HOW TO IMPORT VALUES FROM ANY PLACE IN TAILWIND TO TOP LEVEL UTILITIES USING THEME TRANSPORTATION. */
+	/* 
+
+.theme-name {
+
+--color-base:theme('colors.base.DEFAULT');
+--color-base-tinted: #;
+--color-base-toned: #;
+--color-base-shaded: #;
+--color-compliment: #;
+--color-compliment-tinted: #;
+--color-compliment-toned: #;
+--color-compliment-shaded: #;
+--color-accent: #;
+--color-accent-tinted: #;
+--color-accent-toned: #;
+--color-accent-shaded: #;
+--color-muted: #;
+--color-muted-tinted: #;
+--color-muted-toned: #;
+--color-muted-shaded: #;
+
+- - - - - -Font Colors- - - - - -
+
+--text-base: #;
+--text-compliment: #;
+--text-accent: #;
+--text-muted: #;
+}
+ */
+
+	/* html is where i put font-size for tailwind (maybe font-family, font-color,  and line-height as well... we will see what works). Mosh puts his under body */
+	/* General text adjustment to make 1rem = 10px */
+	/* font-size: calc(1vmin); Responsive Text (seen on React app) or Media Queries */
+	html {
+		font-size: 62.5%;
+		@apply font-NotoSans;
+	}
+
+	/* according to mosh you put font-family, line-height and color here in the body */
+
+	body {
+		@apply text-1.6 text-compliment;
+	}
+
+	/* Typography - rems */
+	/* Remember top margin should be higher than bottom margin for headings. Be aware of margin collapsing. Trick with p elements is to set the margin to 0 and let headings decide space uniformly*/
+
+	/* margin-top 2rem - 4rem*/
+	/* margin-bottom: 1 - 2rem*/
+
+	h1,
+	h2,
+	h3,
+	h4 {
+		margin-bottom: 1rem;
+		margin-top: 3rem;
+	}
+
+	h1 {
+		@apply text-7;
+	}
+	h2 {
+		@apply text-5.5;
+	}
+	h3 {
+		@apply text-4.5;
+	}
+	h4 {
+		@apply text-3.5;
+	}
+	p {
+		margin: 0rem;
+	}
+}
+
+@tailwind components;
+/* @import "./components/ZenCSS/zenCSS.css"; */
+
+/* @import "./components/ZenCSS/ZenSpheres.css";
+@import "./components/ZenCSS/ZenInfoContainer.css";
+ */
+@import "./components/ZenJSX/ZenCSS.css";
+@import "./components/Showcase/ReadingList/ReadingListCSS/ReadingList.css";
+@import "./components/ZenJSX/Nav.css";
+@import "./components/ExternalComponents/List.css";
+@import "./components/ZenJSX/FormOfInputs.css";
+@layer components {
+	.zen-core {
+		@apply flex flex-row justify-evenly items-center lg:flex lg:flex-row lg:justify-around lg:items-center w-screen h-screen;
+	}
+}
+@tailwind utilities;

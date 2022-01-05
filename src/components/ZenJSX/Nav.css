@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.nav {
+	}
+
+	.nav-logo {
+		@apply text-accent w-8  /* min-w-[10rem] */ max-w-[20rem] sm:w-full bg-gray-700 p-1 self-start;
+	}
+
+	.nav-link-container {
+	}
+}

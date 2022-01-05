@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	/*
+	/*----------------- Navigation Bar */
+	.nav-container {
+		@apply flex flex-col justify-between items-center  w-10/12 bg-gradient-to-b from-slate-300/50 to-sky-900/50 m-1 mx-1 rounded-xl;
+	}
+
+	.nav-links-container {
+		@apply border-l-2 border-r-2 border-sky-900/70 m-0.5 p-0.125 flex flex-col justify-center items-center w-2/5 rounded-xl min-w-fit;
+	}
+
+	h3.nav {
+		@apply m-0.5 rounded-xl;
+	}
+
+	a {
+		@apply bg-gradient-to-r from-yellow-300/50 to-red-300/50 border-2 border-yellow-500 m-0.25 p-0.5  hover:border-blue-400 hover:border-2 hover:bg-gradient-to-l  hover:from-blue-300/50 rounded-xl whitespace-nowrap;
+	}
+
+	/*---------------------------- Blog Home */
+
+	.home-container {
+		@apply bg-gradient-to-t from-slate-300/50 to-slate-300  p-0.125 m-1 w-10/12 flex flex-col items-center text-center rounded-xl;
+	}
+
+	.home-static-content {
+		@apply bg-gradient-to-r from-blue-400/50 border-2 border-blue-600  m-1 rounded-xl p-0.75;
+	}
+
+	button.delete {
+		@apply absolute bottom-0 right-0 text-right text-red-900 bg-pink-100 border-2 border-pink-500 shadow-lg hover:bg-pink-300 hover:border-red-800 m-0.25;
+	}
+
+	.text-status-error {
+		@apply text-black bg-pink-300 border-2 border-red-500   animate-pulse;
+	}
+
+	.text-status-wait {
+		@apply text-slate-900  animate-pulse shadow-lg;
+	}
+
+	/* -------------------------   Preview   */
+
+	h3.blog {
+		@apply border-orange-600 border-2 my-0.5 py-0.5;
+	}
+
+	h3.blog.author {
+		@apply border-purple-500 border-4;
+	}
+
+	h4.blog {
+		@apply border-blue-600 border-2 my-0.5 py-0.5;
+	}
+
+	div.blog {
+		@apply border-black border-2;
+	}
+
+	/*------------------- Blog Details */
+
+	.details-container {
+		@apply border-2 border-blue-500 bg-blue-200  relative flex flex-col w-5/6 sm:w-1/2 p-0.5 m-0.5;
+	}
+
+	.details-title {
+		@apply bg-emerald-200 text-center mb-0.25;
+	}
+	.details-author {
+		@apply bg-red-300 text-center mb-2;
+	}
+	.details-body {
+		@apply bg-sky-300 indent-3 leading-x1.5;
+	}
+	.details-id {
+		@apply bg-purple-300 text-1 mt-1;
+	}
+
+	/* ----------------- Blog Create */
+
+	.create-container {
+		@apply bg-gradient-to-r from-purple-500/50  border-2 flex w-5/6 sm:w-1/2 flex-col justify-center items-center border-purple-600 m-0.25;
+	}
+	.blog {
+		@apply m-0.125 p-0.125;
+	}
+
+	div.blog {
+		@apply w-3/4;
+	}
+	label.blog {
+		@apply bg-red-200 flex flex-col justify-center items-center text-1.4;
+	}
+	textarea.blog {
+		@apply bg-cyan-200 w-10/12;
+	}
+	.blog[type="text"] {
+		@apply bg-emerald-200;
+	}
+	.blog[type="submit"] {
+		@apply bg-orange-300;
+	}
+}
+
+/* Going crazy over the possibilities of the gradients 
+/* to-slate-100/10 hover:to-purple-300/80 hover:text-pink-700 */
