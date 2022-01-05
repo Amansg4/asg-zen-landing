@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/asg-zen-landing/static/css/main.e6065228.css",
+    "main.js": "/asg-zen-landing/static/js/main.117005db.js",
+    "static/js/787.a1fce5dd.chunk.js": "/asg-zen-landing/static/js/787.a1fce5dd.chunk.js",
+    "static/media/mongodb-seeklogo.com.svg": "/asg-zen-landing/static/media/mongodb-seeklogo.com.153b7b440efa05666029a47da0d0baa0.svg",
+    "static/media/react-logo_q2iuni.svg": "/asg-zen-landing/static/media/react-logo_q2iuni.a8ac60101251e9853f4f3bdb905a0c4a.svg",
+    "static/media/node-logo_runwwy.svg": "/asg-zen-landing/static/media/node-logo_runwwy.ccf65d3232bd501b1509b6372cb6763b.svg",
+    "static/media/js-logo_gvosxg.svg": "/asg-zen-landing/static/media/js-logo_gvosxg.d5756b1fbff5786fb22807e1d4a1ad50.svg",
+    "static/media/html-logo_lfmuid.svg": "/asg-zen-landing/static/media/html-logo_lfmuid.21fb83843f616a259f155275e6b3b805.svg",
+    "static/media/tailwind-css-seeklogo.com.svg": "/asg-zen-landing/static/media/tailwind-css-seeklogo.com.50fbcf516b9a3774e9a83272167059ae.svg",
+    "static/media/Group 13.svg": "/asg-zen-landing/static/media/Group 13.1a0df073ceb06ad0391a6ad212b6f9fe.svg",
+    "index.html": "/asg-zen-landing/index.html",
+    "static/media/code-heroicon.svg": "/asg-zen-landing/static/media/code-heroicon.d21923639205ea294d6c9da8b4720cef.svg",
+    "static/media/icons8-css3.svg": "/asg-zen-landing/static/media/icons8-css3.64fa1d1c4801d931c3717be71f6c020e.svg",
+    "main.e6065228.css.map": "/asg-zen-landing/static/css/main.e6065228.css.map",
+    "main.117005db.js.map": "/asg-zen-landing/static/js/main.117005db.js.map",
+    "787.a1fce5dd.chunk.js.map": "/asg-zen-landing/static/js/787.a1fce5dd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6065228.css",
+    "static/js/main.117005db.js"
+  ]
+}
