@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const API_BASE = "http://localhost:4000";
+const API_BASE = "https://asg-backend.herokuapp.com";
 
 const ContactForm = () => {
 	const [name, setName] = useState("");
