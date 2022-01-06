@@ -18,7 +18,7 @@ const ContactForm = () => {
 			message,
 		};
 
-		fetch(API_BASE + "/send_mail", {
+		fetch(API_BASE + "/contactMe/send_mail", {
 			method: "POST",
 			headers: {
 				Accept: "application/json, text/plain, */*",
