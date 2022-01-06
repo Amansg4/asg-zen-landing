@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/asg-zen-landing/static/css/main.e6065228.css",
-    "main.js": "/asg-zen-landing/static/js/main.28bb3f07.js",
+    "main.js": "/asg-zen-landing/static/js/main.6ebcdc05.js",
     "static/js/787.a1fce5dd.chunk.js": "/asg-zen-landing/static/js/787.a1fce5dd.chunk.js",
     "static/media/mongodb-seeklogo.com.svg": "/asg-zen-landing/static/media/mongodb-seeklogo.com.153b7b440efa05666029a47da0d0baa0.svg",
     "static/media/react-logo_q2iuni.svg": "/asg-zen-landing/static/media/react-logo_q2iuni.a8ac60101251e9853f4f3bdb905a0c4a.svg",
@@ -14,11 +14,11 @@
     "static/media/code-heroicon.svg": "/asg-zen-landing/static/media/code-heroicon.d21923639205ea294d6c9da8b4720cef.svg",
     "static/media/icons8-css3.svg": "/asg-zen-landing/static/media/icons8-css3.64fa1d1c4801d931c3717be71f6c020e.svg",
     "main.e6065228.css.map": "/asg-zen-landing/static/css/main.e6065228.css.map",
-    "main.28bb3f07.js.map": "/asg-zen-landing/static/js/main.28bb3f07.js.map",
+    "main.6ebcdc05.js.map": "/asg-zen-landing/static/js/main.6ebcdc05.js.map",
     "787.a1fce5dd.chunk.js.map": "/asg-zen-landing/static/js/787.a1fce5dd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6065228.css",
-    "static/js/main.28bb3f07.js"
+    "static/js/main.6ebcdc05.js"
   ]
 }
